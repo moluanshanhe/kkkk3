@@ -11,4 +11,5 @@
 #
 
 # Modify default IP
+sed -i 's|^TARGET_|# TARGET_|g; s|# TARGET_DEVICES += phicomm-k3|TARGET_DEVICES += phicomm-k3|' target/linux/bcm53xx/image/Makefile
 sed -i 's/192.168.1.1/192.168.1.2/g' package/base-files/files/bin/config_generate
